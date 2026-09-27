@@ -1,8 +1,7 @@
 # Esegue in ordine tutti gli script del Capitolo 3.
 # Ogni script legge i risultati di quelli precedenti dalla cartella "risultati".
 
-# Prima di eseguire impostare come directory di lavoro la cartella codice_R,
-# ad esempio: setwd("C:/percorso/della/cartella/codice_R")
+# Prima di eseguire impostare come directory di lavoro la cartella codice_R
 
 dir.create("risultati", showWarnings = FALSE)
 dir.create("grafici", showWarnings = FALSE)

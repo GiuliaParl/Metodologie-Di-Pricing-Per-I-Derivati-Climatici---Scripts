@@ -10,7 +10,7 @@
 #         risultati/06_backtest.txt
 #         grafici/figura13_backtest.png
 
-# directory di lavoro: la cartella codice_R (vedi LEGGIMI)
+# directory di lavoro: la cartella codice_R 
 library(ggplot2)
 
 indice <- read.csv("risultati/indice_hdd.csv")

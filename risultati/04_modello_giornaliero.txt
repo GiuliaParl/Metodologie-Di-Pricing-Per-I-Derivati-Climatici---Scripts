@@ -15,7 +15,7 @@ t            1.566e-04  3.680e-06   42.55   <2e-16 ***
 seno        -2.890e+00  2.843e-02 -101.66   <2e-16 ***
 coseno      -1.003e+01  2.846e-02 -352.49   <2e-16 ***
 ---
-Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
 Residual standard error: 2.767 on 18928 degrees of freedom
 Multiple R-squared:  0.8785,	Adjusted R-squared:  0.8785 
@@ -43,7 +43,7 @@ Coefficients:
        Estimate Std. Error t value Pr(>|t|)    
 Y_ieri 0.838431   0.003961   211.7   <2e-16 ***
 ---
-Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
 Residual standard error: 1.508 on 18930 degrees of freedom
 Multiple R-squared:  0.703,	Adjusted R-squared:  0.703 

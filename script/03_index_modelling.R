@@ -5,7 +5,7 @@
 #         risultati/03_distribuzioni.txt
 #         grafici/figura10_distribuzioni.png
 
-# directory di lavoro: la cartella codice_R (vedi LEGGIMI)
+# directory di lavoro: la cartella codice_R 
 library(MASS)
 library(ggplot2)
 
@@ -54,7 +54,7 @@ grafico <- ggplot() +
   geom_line(data = curve, aes(x = hdd, y = densita, colour = distribuzione,
                               linetype = distribuzione), linewidth = 0.8) +
   scale_colour_manual(values = c("Normale" = "#1f4e79", "Lognormale" = "#c00000")) +
-  labs(x = "Indice HDD corretto per il trend (punti indice)", y = "Densità",
+  labs(x = "Indice HDD senza trend (°C·giorno)", y = "Densità",
        colour = NULL, linetype = NULL) +
   theme_minimal() +
   theme(legend.position = "bottom")

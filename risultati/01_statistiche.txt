@@ -1,10 +1,8 @@
 Controlli sul file ERA5:
-                  osservazioni             giorni_nel_periodo 
-                         19236                          19236 
-                 date_ripetute                valori_mancanti 
+                  osservazioni             giorni_nel_periodo                  date_ripetute 
+                         19236                          19236                              0 
+               valori_mancanti giorni_con_tmax_minore_di_tmin 
                              0                              0 
-giorni_con_tmax_minore_di_tmin 
-                             0 
 
 Statistiche della temperatura media giornaliera:
      media dev_standard minimo massimo
@@ -36,7 +34,7 @@ Coefficients:
 (Intercept) -1.003e+02  8.474e+00  -11.84 4.11e-16 ***
 anno         5.728e-02  4.238e-03   13.52  < 2e-16 ***
 ---
-Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
 Residual standard error: 0.4586 on 50 degrees of freedom
 Multiple R-squared:  0.7851,	Adjusted R-squared:  0.7808 

@@ -2,10 +2,8 @@ Stagioni complete: 52 | giorni per stagione: 151 152
 Indice realizzato nella stagione 2025/26: 1475.75 
 
 Indice osservato (51 stagioni):
-           media     dev_standard           minimo          massimo 
-      1732.37941        170.58637       1412.50000       2073.65000 
-coeff_variazione 
-         9.84694 
+           media     dev_standard           minimo          massimo coeff_variazione 
+      1732.37941        170.58637       1412.50000       2073.65000          9.84694 
 Stagione piu fredda: 1984 | stagione piu mite: 2022 
 
 Media prime 26 stagioni (1974/75-1999/00): 1828.023 
@@ -25,7 +23,7 @@ Coefficients:
 (Intercept) 1945.224     34.321  56.678  < 2e-16 ***
 t             -8.186      1.149  -7.127 4.23e-09 ***
 ---
-Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
 Residual standard error: 120.8 on 49 degrees of freedom
 Multiple R-squared:  0.509,	Adjusted R-squared:  0.4989 
@@ -45,7 +43,7 @@ Coefficients:
 t             -5.15106    4.70963  -1.094    0.280    
 I(t^2)        -0.05837    0.08780  -0.665    0.509    
 ---
-Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
 Residual standard error: 121.4 on 48 degrees of freedom
 Multiple R-squared:  0.5134,	Adjusted R-squared:  0.4932 
@@ -57,7 +55,5 @@ Soglia approssimata al 95% (2/radice di 51): 0.280056
 Livello previsto per il 2025/26: 1519.535 | errore standard: 34.32057 | intervallo al 95%: 1452.267 1586.803 
 
 Indice senza trend:
-           media     dev_standard           minimo          massimo 
-     1519.535059       119.537464      1291.459896      1779.573575 
-coeff_variazione 
-        7.866713 
+           media     dev_standard           minimo          massimo coeff_variazione 
+     1519.535059       119.537464      1291.459896      1779.573575         7.866713 

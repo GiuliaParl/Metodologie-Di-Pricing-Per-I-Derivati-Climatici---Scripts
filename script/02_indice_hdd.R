@@ -7,7 +7,7 @@
 #         risultati/02_indice_trend.txt
 #         grafici/figura9_indice_hdd.png
 
-# directory di lavoro: la cartella codice_R (vedi LEGGIMI)
+# directory di lavoro: la cartella codice_R 
 library(ggplot2)
 
 dati <- read.csv("risultati/temperatura_giornaliera.csv")
@@ -94,7 +94,7 @@ grafico <- ggplot(stima, aes(x = stagione, y = HDD)) +
   geom_line(colour = "#1f4e79") +
   geom_point(colour = "#1f4e79", size = 1.5) +
   geom_point(data = verifica, aes(x = stagione, y = HDD), colour = "#2e7d32", size = 3, shape = 18) +
-  labs(x = "Stagione invernale (anno di inizio)", y = "Indice HDD stagionale (punti indice)") +
+  labs(x = "Stagione invernale (anno di inizio)", y = "Indice HDD stagionale (°C·giorno)") +
   theme_minimal()
 
 ggsave("grafici/figura9_indice_hdd.png", grafico, width = 18, height = 9, units = "cm", dpi = 300)

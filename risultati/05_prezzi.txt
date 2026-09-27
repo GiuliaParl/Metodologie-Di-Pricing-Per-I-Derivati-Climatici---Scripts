@@ -6,10 +6,8 @@ Fattore di sconto: 0.9913089 | strike at the money: 1520
 3   1570   285.73023    1551.1183     1521.4727        1530.0896 1663.2509
 
 Valore atteso dell'indice:
-     burn_grezza     burn_detrend    index_normale index_lognormale 
-        1732.379         1519.535         1519.535         1519.537 
-           daily 
-        1507.042 
+     burn_grezza     burn_detrend    index_normale index_lognormale            daily 
+        1732.379         1519.535         1519.535         1519.537         1507.042 
 
 Probabilita di esercizio:
  burn_grezza burn_detrend        daily 
@@ -20,26 +18,16 @@ Daily modelling, strike 1520 : errore di simulazione = 14.12419
 
 Prezzo con caricamento, alfa = 0 / 0.25 / 0.5: 996.6142 1323.198 1649.781 
 
-                                impostazione stagioni valore_atteso prezzo_put
-1             Tutte le 51 stagioni osservate       51      1732.379   142.8068
-2               Ultime 30 stagioni osservate       30      1644.975   242.7716
-3               Ultime 20 stagioni osservate       20      1616.225   364.1573
-4               Ultime 10 stagioni osservate       10      1554.375   451.1447
-5           Serie corretta, livello centrale       51      1519.535   996.6142
-6 Serie corretta, livello +1 errore standard       51      1553.856   682.7655
-7 Serie corretta, livello -1 errore standard       51      1485.214  1353.5264
-  errore_standard
-1        61.65314
-2       101.51027
-3       145.82524
-4       250.38817
-5       182.92342
-6       145.89991
-7       220.36528
+                                impostazione stagioni valore_atteso prezzo_put errore_standard
+1             Tutte le 51 stagioni osservate       51      1732.379   142.8068        61.65314
+2               Ultime 30 stagioni osservate       30      1644.975   242.7716       101.51027
+3               Ultime 20 stagioni osservate       20      1616.225   364.1573       145.82524
+4               Ultime 10 stagioni osservate       10      1554.375   451.1447       250.38817
+5           Serie corretta, livello centrale       51      1519.535   996.6142       182.92342
+6 Serie corretta, livello +1 errore standard       51      1553.856   682.7655       145.89991
+7 Serie corretta, livello -1 errore standard       51      1485.214  1353.5264       220.36528
 
 Stagione 2025/26: indice realizzato = 1475.75 | payoff della put = 885 
 Scarto tra valore atteso e realizzato:
-     burn_grezza     burn_detrend    index_normale index_lognormale 
-       256.62941         43.78506         43.78506         43.78688 
-           daily 
-        31.29223 
+     burn_grezza     burn_detrend    index_normale index_lognormale            daily 
+       256.62941         43.78506         43.78506         43.78688         31.29223 

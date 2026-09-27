@@ -9,7 +9,7 @@
 # Output: risultati/tab_copertura.csv
 #         risultati/07_copertura_basis_risk.txt
 
-# directory di lavoro: la cartella codice_R (vedi LEGGIMI)
+# directory di lavoro: la cartella codice_R 
 
 tick <- 20
 sconto <- exp(-0.0211 * 151 / 365)

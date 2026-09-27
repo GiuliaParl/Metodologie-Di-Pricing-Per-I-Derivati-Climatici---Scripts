@@ -11,7 +11,7 @@
 #         risultati/04_modello_giornaliero.txt
 #         grafici/figura11_media_stagionale.png
 
-# directory di lavoro: la cartella codice_R (vedi LEGGIMI)
+# directory di lavoro: la cartella codice_R 
 library(tseries)
 library(moments)
 library(ggplot2)
@@ -107,17 +107,10 @@ capture.output(
 # e media stagionale stimata Lambda(t) (blu)
 periodo <- subset(stima, date >= as.Date("2022-11-01"))
 
-etichetta_dat <- "Temperatura media giornaliera"
-etichetta_lambda <- "Media stagionale Λ(t)"
-
 grafico <- ggplot(periodo, aes(x = date)) +
-  geom_line(aes(y = DAT, colour = etichetta_dat), linewidth = 0.3) +
-  geom_line(aes(y = S, colour = etichetta_lambda), linewidth = 1) +
-  scale_colour_manual(
-    values = setNames(c("grey65", "#1f4e79"), c(etichetta_dat, etichetta_lambda)),
-    breaks = c(etichetta_dat, etichetta_lambda)) +
-  labs(x = NULL, y = "Temperatura media giornaliera (°C)", colour = NULL) +
-  theme_minimal() +
-  theme(legend.position = "bottom")
+  geom_line(aes(y = DAT), colour = "grey65", linewidth = 0.3) +
+  geom_line(aes(y = S), colour = "#1f4e79", linewidth = 1) +
+  labs(x = NULL, y = "Temperatura media giornaliera (°C)") +
+  theme_minimal()
 
 ggsave("grafici/figura11_media_stagionale.png", grafico, width = 18, height = 8, units = "cm", dpi = 300)

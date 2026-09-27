@@ -9,7 +9,7 @@
 #         risultati/05_prezzi.txt
 #         grafici/figura12_montecarlo.png
 
-# directory di lavoro: la cartella codice_R (vedi LEGGIMI)
+# directory di lavoro: la cartella codice_R 
 library(ggplot2)
 
 indice <- read.csv("risultati/indice_hdd.csv")
@@ -122,29 +122,13 @@ capture.output(
 
 # Figura 12: stagioni simulate (istogramma), distribuzione storica senza trend
 # (curva rossa), strike (linea punteggiata), valore realizzato (linea verde)
-et_sim <- "Stagioni simulate (daily modelling)"
-et_sto <- "Stagioni storiche corrette per il trend"
-et_k <- "Prezzo di esercizio"
-et_real <- "Valore realizzato 2025/26"
-ordine_linee <- c(et_sto, et_k, et_real)
-linee <- data.frame(x = c(K, realizzato), tipo = c(et_k, et_real))
-
 grafico <- ggplot() +
-  geom_histogram(data = simulazioni, aes(x = HDD, y = after_stat(density), fill = et_sim),
-                 bins = 40, colour = "white") +
-  geom_density(data = stima, aes(x = HDD_detrend, colour = et_sto, linetype = et_sto),
-               linewidth = 0.9, key_glyph = "path") +
-  geom_vline(data = linee, aes(xintercept = x, colour = tipo, linetype = tipo),
-             linewidth = 0.8, key_glyph = "path") +
-  scale_fill_manual(values = setNames("#8faadc", et_sim)) +
-  scale_colour_manual(values = setNames(c("#c00000", "black", "#2e7d32"), ordine_linee),
-                      breaks = ordine_linee) +
-  scale_linetype_manual(values = setNames(c("solid", "dotted", "solid"), ordine_linee),
-                        breaks = ordine_linee) +
-  guides(fill = guide_legend(override.aes = list(colour = "white"))) +
-  labs(x = "Indice HDD stagionale (punti indice)", y = "Densità",
-       fill = NULL, colour = NULL, linetype = NULL) +
-  theme_minimal() +
-  theme(legend.position = "bottom", legend.box = "vertical")
+  geom_histogram(data = simulazioni, aes(x = HDD, y = after_stat(density)),
+                 bins = 40, fill = "#8faadc", colour = "white") +
+  geom_density(data = stima, aes(x = HDD_detrend), colour = "#c00000", linewidth = 0.9) +
+  geom_vline(xintercept = K, linetype = "dotted") +
+  geom_vline(xintercept = realizzato, colour = "#2e7d32", linewidth = 0.9) +
+  labs(x = "Indice HDD stagionale (°C·giorno)", y = "Densità") +
+  theme_minimal()
 
 ggsave("grafici/figura12_montecarlo.png", grafico, width = 16, height = 9, units = "cm", dpi = 300)

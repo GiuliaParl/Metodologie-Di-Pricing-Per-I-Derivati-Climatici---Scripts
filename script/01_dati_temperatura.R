@@ -9,7 +9,7 @@
 #         risultati/01_statistiche.txt
 #         grafici/figura8_temperatura.png
 
-# directory di lavoro: la cartella codice_R (vedi LEGGIMI)
+# directory di lavoro: la cartella codice_R 
 library(ggplot2)
 
 dati <- read.csv("dati/era5_milano.csv")
@@ -78,25 +78,12 @@ write.csv(dati[, c("date", "tmax", "tmin", "DAT")],
 # Figura 8: temperatura giornaliera (grigio), media annua (blu), trend (rosso)
 medie_annue$data <- as.Date(paste0(medie_annue$anno, "-07-01"))
 
-et_gio <- "Temperatura media giornaliera"
-et_ann <- "Media annua"
-et_trend <- "Retta di tendenza"
-ordine <- c(et_gio, et_ann, et_trend)
-
 grafico <- ggplot() +
-  geom_line(data = dati, aes(x = date, y = DAT, colour = et_gio, linetype = et_gio),
-            linewidth = 0.2) +
-  geom_line(data = medie_annue, aes(x = data, y = DAT, colour = et_ann, linetype = et_ann),
-            linewidth = 0.9) +
-  geom_smooth(data = medie_annue, aes(x = data, y = DAT, colour = et_trend, linetype = et_trend),
-              method = "lm", formula = y ~ x, se = FALSE) +
-  scale_colour_manual(values = setNames(c("grey75", "#1f4e79", "#c00000"), ordine),
-                      breaks = ordine) +
-  scale_linetype_manual(values = setNames(c("solid", "solid", "dashed"), ordine),
-                        breaks = ordine) +
-  labs(x = NULL, y = "Temperatura media giornaliera (°C)",
-       colour = NULL, linetype = NULL) +
-  theme_minimal() +
-  theme(legend.position = "bottom")
+  geom_line(data = dati, aes(x = date, y = DAT), colour = "grey75", linewidth = 0.2) +
+  geom_line(data = medie_annue, aes(x = data, y = DAT), colour = "#1f4e79", linewidth = 0.9) +
+  geom_smooth(data = medie_annue, aes(x = data, y = DAT), method = "lm", formula = y ~ x,
+              se = FALSE, colour = "#c00000", linetype = "dashed") +
+  labs(x = NULL, y = "Temperatura media giornaliera (°C)") +
+  theme_minimal()
 
 ggsave("grafici/figura8_temperatura.png", grafico, width = 18, height = 9, units = "cm", dpi = 300)
