@@ -1,0 +1,17 @@
+Strike: 1520 | premio: 996.6142 
+Controllo: la serie corretta di Milano coincide con quella dello script 02: TRUE 
+
+    citta correlazione_con_milano dev_standard_scoperto dev_standard_coperto
+1  milano               1.0000000              2390.749             1391.508
+2  torino               0.9235165              2445.015             1585.598
+3  verona               0.9544778              2542.305             1530.375
+4 bologna               0.9348705              2839.286             1809.283
+  riduzione_percentuale peggiore_scoperto peggiore_coperto
+1              41.79614         -4561.503         -996.053
+2              35.14976         -4876.930        -2713.246
+3              39.80365         -4545.174        -2584.924
+4              36.27684         -5566.436        -4050.193
+
+Correlazione con Milano calcolata sugli indici non corretti per il trend:
+   milano    torino    verona   bologna 
+1.0000000 0.9609467 0.9762402 0.9386546 

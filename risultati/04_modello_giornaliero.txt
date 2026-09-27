@@ -1,0 +1,86 @@
+Osservazioni usate per la stima: 18932 
+
+
+Call:
+lm(formula = DAT ~ t + seno + coseno, data = stima)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-10.9442  -1.8697   0.0529   1.9178  10.6929 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  1.274e+01  4.023e-02  316.78   <2e-16 ***
+t            1.566e-04  3.680e-06   42.55   <2e-16 ***
+seno        -2.890e+00  2.843e-02 -101.66   <2e-16 ***
+coseno      -1.003e+01  2.846e-02 -352.49   <2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 2.767 on 18928 degrees of freedom
+Multiple R-squared:  0.8785,	Adjusted R-squared:  0.8785 
+F-statistic: 4.562e+04 on 3 and 18928 DF,  p-value: < 2.2e-16
+
+Trend per decennio (gradi C): 0.5719191 
+Ampiezza del ciclo annuale (gradi C): 10.44092 
+
+
+	Augmented Dickey-Fuller Test
+
+data:  stima$Y
+Dickey-Fuller = -20.803, Lag order = 26, p-value = 0.01
+alternative hypothesis: stationary
+
+
+Call:
+lm(formula = Y_oggi ~ Y_ieri - 1)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-7.7481 -0.9098  0.1211  1.0135  7.8984 
+
+Coefficients:
+       Estimate Std. Error t value Pr(>|t|)    
+Y_ieri 0.838431   0.003961   211.7   <2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 1.508 on 18930 degrees of freedom
+Multiple R-squared:  0.703,	Adjusted R-squared:  0.703 
+F-statistic: 4.481e+04 on 1 and 18930 DF,  p-value: < 2.2e-16
+
+phi = 0.8384305 | kappa = 0.1615695 | emivita (giorni) = 3.93334 
+
+   mese    sigma
+1     1 1.618699
+2     2 1.545374
+3     3 1.604723
+4     4 1.560164
+5     5 1.520755
+6     6 1.524105
+7     7 1.467506
+8     8 1.478628
+9     9 1.298322
+10   10 1.342569
+11   11 1.468086
+12   12 1.584768
+
+Residui standardizzati: asimmetria = -0.4262611 | curtosi = 3.839853 | autocorrelazione al primo ritardo = 0.08046545 
+
+Scostamento medio dalla media stagionale, per mese:
+   mese           Y
+1     1  0.02186597
+2     2  0.61608248
+3     3  1.19253429
+4     4 -0.26784686
+5     5 -0.98559909
+6     6 -0.66544820
+7     7  0.27238963
+8     8  0.96377488
+9     9  0.21306270
+10   10  0.04162394
+11   11 -0.57857982
+12   12 -0.83798736
+
+Indice HDD simulato 2025/26: media = 1507.042 | dev. standard = 114.3717 
+Quantili 5% e 95%: 1318.152 1692.764 

@@ -1,0 +1,52 @@
+Controlli sul file ERA5:
+                  osservazioni             giorni_nel_periodo 
+                         19236                          19236 
+                 date_ripetute                valori_mancanti 
+                             0                              0 
+giorni_con_tmax_minore_di_tmin 
+                             0 
+
+Statistiche della temperatura media giornaliera:
+     media dev_standard minimo massimo
+1 14.27785     7.961996  -6.55    33.1
+
+   mese media dev_standard
+1     1  3.91         2.81
+2     2  5.76         3.01
+3     3  9.94         3.17
+4     4 13.60         2.99
+5     5 18.10         3.16
+6     6 22.33         3.42
+7     7 24.82         2.83
+8     8 24.24         3.04
+9     9 19.80         2.73
+10   10 14.49         3.05
+11   11  8.65         3.20
+12   12  4.60         2.75
+
+Call:
+lm(formula = DAT ~ anno, data = medie_annue)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-1.17943 -0.23295 -0.04082  0.24300  1.06973 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept) -1.003e+02  8.474e+00  -11.84 4.11e-16 ***
+anno         5.728e-02  4.238e-03   13.52  < 2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.4586 on 50 degrees of freedom
+Multiple R-squared:  0.7851,	Adjusted R-squared:  0.7808 
+F-statistic: 182.7 on 1 and 50 DF,  p-value: < 2.2e-16
+
+Riscaldamento stimato per decennio (gradi C): 0.572761 
+
+Stazione Milano Brera (ITE00100554):
+ultimo_giorno_completo    copertura_2005_2024 
+          "2008-11-30"                   "19" 
+Stazione Cameri (ITM00016064):
+ultimo_giorno_completo    copertura_2005_2024 
+          "2025-08-24"                 "32.7" 

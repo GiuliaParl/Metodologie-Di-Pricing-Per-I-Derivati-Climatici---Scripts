@@ -1,0 +1,9 @@
+        distribuzione parametro_1  parametro_2 log_verosimiglianza      AIC
+mean          Normale 1519.535059 118.35972614           -315.8260 635.6520
+meanlog    Lognormale    7.323128   0.07788334           -315.6657 635.3314
+
+	Shapiro-Wilk normality test
+
+data:  x
+W = 0.98086, p-value = 0.576
+

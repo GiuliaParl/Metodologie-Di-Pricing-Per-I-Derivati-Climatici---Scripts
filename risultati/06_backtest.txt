@@ -1,0 +1,11 @@
+                impostazione errore_medio errore_assoluto_medio
+1 Senza correzione del trend   156.148240             168.55633
+2   Con correzione del trend    -1.563024              97.38218
+  stagioni_sovrastimate premio_medio risultato_cumulato stagioni_in_perdita
+1                    24     399.6274         -26447.951                  15
+2                    12    1499.6868           2153.592                  10
+
+Payoff medio pagato: 1416.856 
+Stagioni in cui la put e stata esercitata: 16 su 26 
+Strike minimo e massimo: 1550 1730 
+Euribor di ottobre minimo e massimo (%): -0.5272381 5.178087 
