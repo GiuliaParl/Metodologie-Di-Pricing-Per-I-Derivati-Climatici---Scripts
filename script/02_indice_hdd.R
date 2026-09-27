@@ -7,7 +7,7 @@
 #         risultati/02_indice_trend.txt
 #         grafici/figura9_indice_hdd.png
 
-# directory di lavoro: la cartella codice_R 
+# directory di lavoro: la cartella principale del repository 
 library(ggplot2)
 
 dati <- read.csv("risultati/temperatura_giornaliera.csv")

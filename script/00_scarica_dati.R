@@ -7,7 +7,7 @@
 #         dati/euribor_6m_bce.csv
 #         dati/ghcn_ITE00100554.csv (Milano Brera), dati/ghcn_ITM00016064.csv (Cameri)
 
-# directory di lavoro: la cartella codice_R 
+# directory di lavoro: la cartella principale del repository 
 cartella <- "dati"
 
 # ---- 1. Temperature ERA5 tramite Open-Meteo ---------------------------------

@@ -5,7 +5,7 @@
 #         risultati/03_distribuzioni.txt
 #         grafici/figura10_distribuzioni.png
 
-# directory di lavoro: la cartella codice_R 
+# directory di lavoro: la cartella principale del repository 
 library(MASS)
 library(ggplot2)
 

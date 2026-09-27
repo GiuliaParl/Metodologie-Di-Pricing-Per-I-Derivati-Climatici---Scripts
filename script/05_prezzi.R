@@ -9,7 +9,7 @@
 #         risultati/05_prezzi.txt
 #         grafici/figura12_montecarlo.png
 
-# directory di lavoro: la cartella codice_R 
+# directory di lavoro: la cartella principale del repository 
 library(ggplot2)
 
 indice <- read.csv("risultati/indice_hdd.csv")

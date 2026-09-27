@@ -9,7 +9,7 @@
 #         risultati/01_statistiche.txt
 #         grafici/figura8_temperatura.png
 
-# directory di lavoro: la cartella codice_R 
+# directory di lavoro: la cartella principale del repository 
 library(ggplot2)
 
 dati <- read.csv("dati/era5_milano.csv")

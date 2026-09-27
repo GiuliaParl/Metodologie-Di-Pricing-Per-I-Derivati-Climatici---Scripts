@@ -11,7 +11,7 @@
 #         risultati/04_modello_giornaliero.txt
 #         grafici/figura11_media_stagionale.png
 
-# directory di lavoro: la cartella codice_R 
+# directory di lavoro: la cartella principale del repository 
 library(tseries)
 library(moments)
 library(ggplot2)
